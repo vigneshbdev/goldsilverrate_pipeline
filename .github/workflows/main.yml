@@ -3,7 +3,7 @@ name: Cron Test Pipeline
 on:
   schedule:
     # 11:20 AM IST
-    - cron: "50 5 * * *"
+    - cron: "10 6 * * *"
   workflow_dispatch:
 
 jobs:
