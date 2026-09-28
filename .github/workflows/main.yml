@@ -1,0 +1,14 @@
+name: Cron Test Pipeline
+
+on:
+  schedule:
+    # 11:20 AM IST
+    - cron: "50 5 * * *"
+  workflow_dispatch:
+
+jobs:
+  test-run:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Run Test Check
+        run: echo "The cron job triggered successfully!"
