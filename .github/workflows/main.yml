@@ -1,12 +1,21 @@
-name: "CodeQL"
+name: Cron Test Pipeline
 
 on:
   schedule:
-    - cron: '*/5 * * * *'
+    - cron: "*/5 * * * *"
+
+  workflow_dispatch:
 
 jobs:
-  test-run:
+  test:
     runs-on: ubuntu-latest
+
     steps:
-      - name: Run Test Check
-        run: echo "The cron job triggered successfully!"
+      - name: Test scheduled trigger
+        run: |
+          echo "=============================="
+          echo "CRON TRIGGERED"
+          echo "Event: ${{ github.event_name }}"
+          echo "UTC time:"
+          date -u
+          echo "=============================="
