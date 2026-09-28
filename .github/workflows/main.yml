@@ -1,9 +1,8 @@
-name: Cron Test Pipeline
+name: "CodeQL"
 
 on:
   schedule:
-    # 11:20 AM IST
-    - cron: "*/2 * * * *"
+    - cron: '*/5 * * * *'
 
 jobs:
   test-run:
