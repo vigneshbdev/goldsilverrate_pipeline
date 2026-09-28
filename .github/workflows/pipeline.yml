@@ -3,7 +3,7 @@ name: Gold Rate Pipeline
 on:
   schedule:
     # 10:30 AM IST, Monday-Saturday
-    - cron: "47 10 * * 1-6"
+    - cron: "50 5 * * 1-6"
       timezone: "Asia/Kolkata"
 
 jobs:
