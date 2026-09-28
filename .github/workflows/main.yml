@@ -3,7 +3,7 @@ name: Cron Test Pipeline
 on:
   schedule:
     # 11:20 AM IST
-    - cron: "*/5 * * * *"
+    - cron: "*/2 * * * *"
 
 jobs:
   test-run:
