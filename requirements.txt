@@ -4,3 +4,4 @@ datetime
 pydantic
 beautifulsoup4
 pillow
+requests
