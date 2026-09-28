@@ -1,0 +1,6 @@
+openai
+python-dotenv
+datetime
+pydantic
+beautifulsoup4
+pillow
